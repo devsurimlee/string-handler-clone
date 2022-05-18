@@ -7,6 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
+
 
 public class UrlConnectorTest {
 
@@ -16,7 +19,7 @@ public class UrlConnectorTest {
     @Test
     void urlFailTest() {
         String failUrl = "test.love";
-        Assertions.assertThatThrownBy(() -> urlConnector.getHtml(failUrl))
+        assertThatThrownBy(() -> urlConnector.getHtml(failUrl))
                 .isInstanceOf(IllegalAccessException.class);
     }
 
@@ -25,6 +28,6 @@ public class UrlConnectorTest {
     @CsvSource({"https://www.naver.com, <title>NAVER</title>", "https://www.google.com, <title>Google</title>"})
     void urlSuccessTest(final String url, final String title) {
         final String result = urlConnector.getHtml(url);
-        Assertions.assertThat(result.contains(title)).isTrue();
+        assertThat(result.contains(title)).isTrue();
     }
 }

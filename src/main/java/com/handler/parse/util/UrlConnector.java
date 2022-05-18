@@ -1,9 +1,11 @@
 package com.handler.parse.util;
 
 import org.jsoup.Jsoup;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+@Component
 public class UrlConnector {
 
     public String getHtml(final String url) {

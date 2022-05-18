@@ -5,6 +5,8 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 public class ExposureTypeTest {
 
     final static String html = "<div>abc</abc>";
@@ -20,6 +22,6 @@ public class ExposureTypeTest {
     @Test
     void allText() {
         final String result = ExposureType.ALL_TEXT.getExposedHtml(html);
-        Assertions.assertThat(result).isEqualTo(html);
+        assertThat(result).isEqualTo(html);
     }
 }
