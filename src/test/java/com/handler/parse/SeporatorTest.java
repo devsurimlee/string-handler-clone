@@ -19,7 +19,7 @@ public class SeporatorTest {
         String eng = "eCdBAaDfcEAbbF";
         String num = "43120";
 
-        final Separator sep = separator.separator(str);
+        final Separator sep = separator.separate(str);
 
         assertAll(
                 () -> assertThat(sep.getEnglish()).isEqualTo(eng),
