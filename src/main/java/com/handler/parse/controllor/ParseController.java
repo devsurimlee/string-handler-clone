@@ -1,8 +1,8 @@
-package com.handler.stringhandlerclone.controllor;
+package com.handler.parse.controllor;
 
-import com.handler.stringhandlerclone.dto.ParseRequest;
-import com.handler.stringhandlerclone.dto.ParseResponse;
-import com.handler.stringhandlerclone.service.ParseService;
+import com.handler.parse.dto.ParseRequest;
+import com.handler.parse.dto.ParseResponse;
+import com.handler.parse.service.ParseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
