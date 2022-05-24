@@ -1,7 +1,6 @@
-package com.handler.parse;
+package com.handler.parse.util;
 
-import com.handler.parse.util.UrlConnector;
-import org.assertj.core.api.Assertions;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

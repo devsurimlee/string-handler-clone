@@ -1,10 +1,6 @@
-package com.handler.parse;
+package com.handler.parse.util;
 
-import com.handler.parse.util.Arranger;
-import com.handler.parse.util.Separator;
-import com.handler.parse.util.Sorter;
-import org.assertj.core.api.Assertions;
-import org.hamcrest.MatcherAssert;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

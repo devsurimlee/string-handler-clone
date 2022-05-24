@@ -1,4 +1,4 @@
-package com.handler.parse;
+package com.handler.parse.dto;
 
 import com.handler.parse.dto.ExposureType;
 import org.assertj.core.api.Assertions;
