@@ -1,6 +1,5 @@
-package com.handler.parse;
+package com.handler.parse.util;
 
-import com.handler.parse.util.Sorter;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
