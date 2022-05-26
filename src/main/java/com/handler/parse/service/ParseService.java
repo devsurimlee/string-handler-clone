@@ -25,6 +25,6 @@ public class ParseService {
         final String interleaveText = interleaver.interleave(arrange);
         final OutputUnit outputUnit = new OutputUnit(interleaveText, request.getUnitCount());
 
-        return null;
+        return new ParseResponse(outputUnit);
     }
 }
