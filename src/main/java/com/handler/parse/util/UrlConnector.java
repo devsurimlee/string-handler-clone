@@ -1,5 +1,6 @@
 package com.handler.parse.util;
 
+import com.handler.parse.error.UrlConnectionException;
 import org.jsoup.Jsoup;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ public class UrlConnector {
             return Jsoup.connect(url).get().html();
         } catch (IOException e) {
             e.printStackTrace();
-            throw new IllegalArgumentException("해당 url에 접근할 수 없습니다. 다시 확인 해주세요");
+            throw new UrlConnectionException("해당 url에 접근할 수 없습니다. 다시 확인 해주세요");
         }
     }
 }
