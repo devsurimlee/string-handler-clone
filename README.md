@@ -5,7 +5,7 @@
 https://github.com/Jonny-Cho/string-handler
 
 * 예제 확인 전 개인작업물💨    
-https://github.com/devsurimlee/springStudy
+https://github.com/devsurimlee/string-bandler-before
 
 ## API 설명
 1. URL 입력시 HTML 코드를 불러온다.
