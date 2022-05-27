@@ -2,7 +2,7 @@
 
 ## 개요
 * Spring 스터디 후 하단의 예제를 클론코딩 하였습니다.  
-https://github.com/devsurimlee/string-handler
+https://github.com/Jonny-Cho/string-handler
 
 * 예제 확인 전 개인작업물💨    
 https://github.com/devsurimlee/springStudy
